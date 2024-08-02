@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Una aplicación web sencilla para generar claves seguras con diferentes configuraciones.">
+    <meta name="author" content="nsandr3s">
+    <title>CreadorDeClaves</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Título principal del proyecto -->
+        <h1>Creador de Claves Seguras</h1>
+
+        <!-- Configuración de la longitud de la clave -->
+        <div class="configuracion">
+            <label for="longitud">Longitud de la clave:</label>
+            <input type="number" id="longitud" name="longitud" min="6" max="50" value="12">
+        </div>
+
+        <!-- Opción para incluir mayúsculas en la clave -->
+        <div class="configuracion">
+            <label>
+                <input type="checkbox" id="mayusculas" checked>
+                Incluir mayúsculas
+            </label>
+        </div>
+
+        <!-- Opción para incluir minúsculas en la clave -->
+        <div class="configuracion">
+            <label>
+                <input type="checkbox" id="minusculas" checked>
+                Incluir minúsculas
+            </label>
+        </div>
+
+        <!-- Opción para incluir números en la clave -->
+        <div class="configuracion">
+            <label>
+                <input type="checkbox" id="numeros" checked>
+                Incluir números
+            </label>
+        </div>
+
+        <!-- Opción para incluir símbolos en la clave -->
+        <div class="configuracion">
+            <label>
+                <input type="checkbox" id="simbolos" checked>
+                Incluir símbolos
+            </label>
+        </div>
+
+        <!-- Botón para generar la clave -->
+        <button id="generar">Generar Clave</button>
+
+        <!-- Resultado de la clave generada -->
+        <div class="resultado">
+            <input type="text" id="clave" readonly aria-label="Clave Generada">
+            <button id="copiar">Copiar</button>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
