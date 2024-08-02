@@ -33,5 +33,5 @@ Para usar este proyecto, simplemente sigue estos pasos:
 
 2. **Navega al directorio del proyecto:**
    ```bash
-   cd GeneradorDeClaves
+   cd GeneradorDeClavesSeguras
    ```
